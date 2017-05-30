@@ -1,30 +1,110 @@
-body{
-	font-family: 'Roboto', sans-serif;
-}
-.caja{
-	background-color: #9B0022;
+*{
+font-family: 'Inconsolata', sans-serif;
 }
 
-header{
-	text-align: center;
+body {
+background-color: #FEBFB3;
+}
+
+.caja{
+background-color: #E1396C;
+}
+
+header, footer{
+text-align: center;
+color: #fff;
 }
 
 .back{
-	background-image: url(http://lorempixel.com/1024/600/cats/);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
+background-image: url(http://lorempixel.com/1024/600/cats/);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 30vh;
+overflow: hidden;
+margin: 0 0 2em;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
-
-.back .container{
-	background-color: rgba(255,255,255, 0.5);
-	position: relative;
-	height: 100vh;
-}
-
 .texto{
-	position: absolute;
-	top: 40%;
-	left: 35%;
+position: absolute;
+top: 40%;
+left: 35%;
+}
+.btn {
+float: right;
+border: none;
+padding: .5em 1em;
+background-color: #96D38C;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+margin: .5em 0;
+transition: .5s ease all;
+}
+.btn:hover, .btn:focus, .btn:active {
+background-color: #D0F9B1;
+transition: .5s ease all;
+color: #96D38C;
+}
+.box {
+background-color: rgba(225, 57, 108,.3);
+padding: 1.5em;
+border-radius: 10px;
+min-height: 430px;
+}
+.cinta {
+background-color: #96D38C;
+display: block;
+width: 25%;
+margin: 0 auto;
+height: 15vh;
+position: relative;
+}
+.cinta::before {
+left: 0;
+border-left: 15em solid #96D38C;
+}
+
+.cinta::after, .cinta::before {
+content: '';
+position: absolute;
+width: 0;
+height: 0;
+bottom: -4em;
+border-top: 1em solid transparent;
+border-bottom: 5em solid transparent;
+}
+.cinta::after {
+right: 0;
+border-right: 15em solid #96D38C;
+}
+
+h1 {
+font-size: 4em;
+padding: 4vh 0 5vh;
+display: block;
+max-width: 90%;
+margin: 0 auto;
+}
+p {
+font-size: 1rem;
+line-height: 110%;
+margin: 1em;
+text-align: center;
+color: rgb(225, 57, 108);
+font-weight: bolder;
+}
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+footer {
+background-color: #E1396C;
+padding: 1em;
+position: absolute;
+width: 100%;
+bottom: 0;
+color: #fff;
 }
